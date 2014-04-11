@@ -1,5 +1,6 @@
 *.class
-
+CircleDemo/gen/
+CircleDemo/bin/
 # Mobile Tools for Java (J2ME)
 .mtj.tmp/
 
