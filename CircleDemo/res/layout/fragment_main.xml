@@ -1,0 +1,62 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android_custom="http://schemas.android.com/apk/res/com.canking.circledemo"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.canking.circledemo.MainActivity$PlaceholderFragment" >
+
+    <net.canking.circleprogressbar.CircleProgressBar
+        android:id="@+id/progress_bar_a"
+        android:layout_width="180dip"
+        android:layout_height="180dip"
+        android:layout_centerInParent="true"
+        android_custom:max="100"
+        android_custom:roundWidth="30dip"
+        android_custom:textColor="#99aaCD"
+        android_custom:textSize="28sp" />
+
+    <net.canking.circleprogressbar.CircleProgressBar
+        android:id="@+id/progress_bar_b"
+        android:layout_width="220dip"
+        android:layout_height="220dip"
+        android:layout_centerInParent="true"
+        android:visibility="gone"
+        android_custom:roundColor="@android:color/transparent"
+        android_custom:roundProgressColor="@android:color/holo_orange_light"
+        android_custom:roundWidth="30dip"
+        android_custom:textColor="#9A3299"
+        android_custom:textSize="28sp" />
+
+    <net.canking.circleprogressbar.CircleProgressBar
+        android:id="@+id/progress_bar_c"
+        android:layout_width="230dp"
+        android:layout_height="230dp"
+        android:layout_centerInParent="true"
+        android:visibility="gone"
+        android_custom:roundColor="@android:color/holo_red_light"
+        android_custom:roundProgressColor="@android:color/holo_blue_bright"
+        android_custom:roundWidth="40dip"
+        android_custom:textColor="#9A99CD"
+        android_custom:textSize="36sp" />
+
+    <TextView
+        android:id="@+id/section_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/holo_blue_bright"
+        android:textSize="28sp" />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/progress_bar_a"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="34dp"
+        android:text="Button" />
+
+</RelativeLayout>
